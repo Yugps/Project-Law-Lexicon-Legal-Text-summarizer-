@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarization Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('static/top-view-frame-with-contract-wooden-judge-gavel.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white container background */
+            padding: 30px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+        .card {
+            margin-top: 20px;
+            border: none; /* Remove card border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+        }
+        .card-title {
+            color: #007bff; /* Blue title color */
+            font-weight: bold; /* Bold title */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Blue button background */
+            border-color: #007bff; /* Blue button border */
+            font-weight: bold; /* Bold button text */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3; /* Darker border on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Summarization Result</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Original Text</h5>
+                <p class="card-text">{{ original_text }}</p>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Summary</h5>
+                <p class="card-text">{{ summary }}</p>
+            </div>
+        </div>
+        <a href="/" class="btn btn-primary mt-4">Back to Home</a>
+    </div>
+</body>
+</html>

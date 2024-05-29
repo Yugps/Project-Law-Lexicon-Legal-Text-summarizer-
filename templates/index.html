@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Summarization</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('static/top-view-frame-with-contract-wooden-judge-gavel.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            margin-top: 100px;
+            color: #222; /* Darker text color */
+        }
+        /* Additional styling for form elements */
+        label {
+            color: #222; /* Darker label text color */
+            font-weight: bold; /* Make label text bold */
+        }
+        textarea,
+        input[type="number"] {
+            color: #444; /* Darker input text color */
+            background-color: #fff; /* Ensure input background is white */
+            border: 1px solid #888; /* Darker border color */
+            font-weight: bold; /* Make input text bold */
+        }
+        textarea:focus,
+        input[type="number"]:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .btn-primary {
+            font-weight: bold; /* Make button text bold */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Legal Summarization</h1>
+        <form action="/summary_generation" method="post">
+            <div class="form-group">
+                <label for="length_of_summary_required">Length of Summary Required:</label>
+                <input type="number" class="form-control" id="length_of_summary_required" name="length_of_summary_required" required>
+            </div>
+            <div class="form-group">
+                <label for="main_article">Enter Legal Text:</label>
+                <textarea class="form-control" id="main_article" name="main_article" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Generate Summary</button>
+        </form>
+    </div>
+</body>
+</html>
