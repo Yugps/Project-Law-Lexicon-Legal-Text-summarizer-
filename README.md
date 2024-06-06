@@ -4,10 +4,10 @@ This project implements a legal judgment summarizer using the Longformer encoder
 
 ## Here Are some WEB APP Images
 - **welcome page**
- ![Alt text](https://github.com/Yugps/Project-Law-Lexicon-Legal-Text-summarizer-/blob/main/In%20App%20Images/welcome_screen_legal_model_app.png)
+![Alt text](https://github.com/Yugps/Project-Law-Lexicon-Legal-Text-summarizer-/blob/main/In%20App%20Images/welcome_screen_legal_model_app.png)
 
 - **Result page**
-  ![Alt text]('https://github.com/Yugps/Project-Law-Lexicon-Legal-Text-summarizer-/blob/main/In%20App%20Images/screencapture_legal_model_results.png')
+![Alt text]('https://github.com/Yugps/Project-Law-Lexicon-Legal-Text-summarizer-/blob/main/In%20App%20Images/screencapture_legal_model_results.png')
 
 ## Features
 - **Longformer Model**: The core of this project is the Longformer, a transformer-based model designed to handle long sequences efficiently. It allows us to process legal texts with thousands of tokens while maintaining performance.
