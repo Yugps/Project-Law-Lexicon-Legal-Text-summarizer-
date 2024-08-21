@@ -1,6 +1,6 @@
 from transformers import LEDForConditionalGeneration, LEDTokenizer,pipeline
 locally_saved_model=LEDForConditionalGeneration.from_pretrained('summarization_model')
-locally_saved_tokenizer=tokenizer=LEDTokenizer.from_pretrained('Legal_model_tokenizer_directory')
+locally_saved_tokenizer=LEDTokenizer.from_pretrained('Legal_model_tokenizer_directory')
 
 from pyngrok import ngrok
 from flask import Flask,request,render_template
